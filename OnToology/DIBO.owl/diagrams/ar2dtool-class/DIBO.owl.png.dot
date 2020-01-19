@@ -1,0 +1,47 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "DIBO:Interaction" "http://biomodels.net/SBO/SBO_0000250" "DIBO:Organ" "https://bioportal.bioontology.org/ontologies/MESH/D020228" "DIBO:Protein" "DIBO:SideEffect" "DIBO:Drug" "DIBO:Enzyme" "https://www.w3.org/def/DIBO/Target" "http://biomodels.net/SBO/SBO_0000635" "DIBO:DNA" "http://semanticscience.org/resource/SIO_010003" "http://biomodels.net/SBO/SBO_0000251" "https://w3id.org/def/DIBO/AgentAffecting/Organs" "DIBO:MolecularMass" "DIBO:PharmacologicSubstance" "http://biomodels.net/SBO/SBO_0000002" "http://purl.uniprot.org/core/Protein" "DIBO:RNA" "http://biomodels.net/SBO/SBO_0000634" "DIBO:PharmacologicAction" "https://bioportal.bioontology.org/ontologies/MESH/D064419" "DIBO:Effect" "http://biomodels.net/SBO/SBO_0000014" ; /*classes style*/
+	"NULL" -> "http://semanticscience.org/resource/SIO_010003" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "e279931:16fbf4d1d72:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "DIBO:Drug" [ label = "rdf:first" ];
+	"NULL" -> "DIBO:Protein" [ label = "rdf:first" ];
+	"NULL" -> "DIBO:DNA" [ label = "rdf:first" ];
+	"NULL" -> "e279931:16fbf4d1d72:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "dibo:affectOrgan" [ label = "owl:onProperty" ];
+	"NULL" -> "e279931:16fbf4d1d72:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "DIBO:RNA" [ label = "rdf:first" ];
+	"https://bioportal.bioontology.org/ontologies/MESH/D020228" -> "DIBO:Effect" [ label = "owl:equivalentClass" ];
+	"http://biomodels.net/SBO/SBO_0000635" -> "DIBO:RNA" [ label = "owl:equivalentClass" ];
+	"http://biomodels.net/SBO/SBO_0000251" -> "DIBO:DNA" [ label = "owl:equivalentClass" ];
+	"http://biomodels.net/SBO/SBO_0000634" -> "DIBO:DNA" [ label = "owl:equivalentClass" ];
+	"http://biomodels.net/SBO/SBO_0000250" -> "DIBO:RNA" [ label = "owl:equivalentClass" ];
+	"http://biomodels.net/SBO/SBO_0000014" -> "DIBO:Enzyme" [ label = "owl:equivalentClass" ];
+	"https://w3id.org/def/DIBO" -> "http://biomodels.net/SBO/" [ label = "owl:imports" ];
+	"https://w3id.org/def/DIBO" -> "DIBO:v1.0" [ label = "owl:versionIRI" ];
+	"http://purl.uniprot.org/core/Protein" -> "DIBO:Protein" [ label = "owl:equivalentClass" ];
+	"https://www.w3.org/def/DIBO/Target" -> "e279931:16fbf4d1d72:-7ffb" [ label = "owl:disjointUnionOf" ];
+	"http://biomodels.net/SBO/SBO_0000002" -> "DIBO:MolecularMass" [ label = "owl:equivalentClass" ];
+	"http://semanticscience.org/resource/SIO_010003" -> "DIBO:Organ" [ label = "owl:equivalentClass" ];
+	"https://bioportal.bioontology.org/ontologies/MESH/D064419" -> "DIBO:SideEffect" [ label = "owl:equivalentClass" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasScientificName" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasMolecularFormula" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasChebiId" ];
+	"DIBO:Drug" -> "DIBO:SideEffect" [ label = "dibo:hasSideEffect" ];
+	"DIBO:MolecularMass" -> "xsd:double" [ label = "dibo:hasValue" ];
+	"DIBO:Drug" -> "DIBO:Enzyme" [ label = "dibo:metabolizedBy" ];
+	"DIBO:Drug" -> "DIBO:PharmacologicSubstance" [ label = "dibo:functionallyGroupedIn" ];
+	"DIBO:Drug" -> "DIBO:PharmacologicAction" [ label = "dibo:actingAs" ];
+	"DIBO:Interaction" -> "DIBO:Drug" [ label = "dibo:hasDrug" ];
+	"DIBO:Drug" -> "DIBO:Organ" [ label = "dibo:metabolizedIn" ];
+	"DIBO:Drug" -> "DIBO:MolecularMass" [ label = "dibo:hasMolecularMass" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasHalfLife" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasOtherName" ];
+	"DIBO:MolecularMass" -> "xsd:string" [ label = "https://www.w3.org/def/DIBO#hasUnits" ];
+	"DIBO:Interaction" -> "https://www.w3.org/def/DIBO/Target" [ label = "dibo:hasTarget" ];
+	"https://w3id.org/def/DIBO/AgentAffecting/Organs" -> "DIBO:Organ" [ label = "dibo:affectOrgan" ];
+	"DIBO:Drug" -> "xsd:string" [ label = "dibo:hasDrugBankId" ];
+	"DIBO:Drug" -> "DIBO:Effect" [ label = "dibo:hasEffect" ];
+
+}
