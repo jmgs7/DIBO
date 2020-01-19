@@ -1,0 +1,27 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "DIBO:Interaction" "DIBO:Antagonism" "DIBO:AntineoplasicAgent" "DIBO:PharmacologicChaperone" "DIBO:Agonism" "DIBO:AgentAffectingCardiovascularSystem" "DIBO:Enzyme" "DIBO:AntibodyAction" "DIBO:Neutral" "DIBO:InmunoTherapeuticAgent" "DIBO:AgentAffectingNervousSystem" "DIBO:Adjuvant" "DIBO:ReceptorModifier" "DIBO:AgentAffectingRespiratorySystem" "https://w3id.org/def/DIBO/AgentAffecting/Organs" "DIBO:AntiInfectiveAgent" "DIBO:PharmacologicSubstance" "http://purl.uniprot.org/core/Protein" "DIBO:ChannelModifier" "DIBO:EnzymeModifier" "DIBO:AgentAffectingBloodorBodyFluid" "DIBO:NucleicAcidModifier" "DIBO:AgentAffectingMusculoskeletalSystem" "DIBO:PharmacologicAction" "https://w3id.org/def/DIBO/AgentAffecting/Metabolism" ; /*classes style*/
+	"DIBO:AntibodyAction" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:AntineoplasicAgent" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:AgentAffectingCardiovascularSystem" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:Agonism" -> "DIBO:Interaction" [ label = "rdfs:subClassOf" ];
+	"DIBO:EnzymeModifier" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:PharmacologicChaperone" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:Adjuvant" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:Antagonism" -> "DIBO:Interaction" [ label = "rdfs:subClassOf" ];
+	"DIBO:InmunoTherapeuticAgent" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:AgentAffectingBloodorBodyFluid" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:ChannelModifier" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:Enzyme" -> "http://purl.uniprot.org/core/Protein" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/DIBO/AgentAffecting/Metabolism" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:Neutral" -> "DIBO:Interaction" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/def/DIBO/AgentAffecting/Organs" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:AgentAffectingNervousSystem" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:NucleicAcidModifier" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:AntiInfectiveAgent" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:AgentAffectingRespiratorySystem" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+	"DIBO:ReceptorModifier" -> "DIBO:PharmacologicAction" [ label = "rdfs:subClassOf" ];
+	"DIBO:AgentAffectingMusculoskeletalSystem" -> "DIBO:PharmacologicSubstance" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,221 @@
+{
+  "@context" : {
+    "AntibodyAction" : {
+      "@id" : "https://w3id.org/def/DIBO/AntibodyAction"
+    },
+    "Effect" : {
+      "@id" : "https://w3id.org/def/DIBO/Effect"
+    },
+    "hasUnits" : {
+      "@id" : "https://www.w3.org/def/DIBO#hasUnits",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AgentAffectingBloodorBodyFluid" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffectingBloodorBodyFluid"
+    },
+    "causedBy" : {
+      "@id" : "https://w3id.org/def/DIBO#causedBy",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "PharmacologicChaperone" : {
+      "@id" : "https://w3id.org/def/DIBO/PharmacologicChaperone"
+    },
+    "ChannelModifier" : {
+      "@id" : "https://w3id.org/def/DIBO/ChannelModifier"
+    },
+    "DNA" : {
+      "@id" : "https://w3id.org/def/DIBO/DNA"
+    },
+    "SideEffect" : {
+      "@id" : "https://w3id.org/def/DIBO/SideEffect"
+    },
+    "MolecularMass" : {
+      "@id" : "https://w3id.org/def/DIBO/MolecularMass"
+    },
+    "hasOtherName" : {
+      "@id" : "https://w3id.org/def/DIBO#hasOtherName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSideEffect" : {
+      "@id" : "https://w3id.org/def/DIBO#hasSideEffect",
+      "@type" : "@id"
+    },
+    "RNA" : {
+      "@id" : "https://w3id.org/def/DIBO/RNA"
+    },
+    "hasMolecularMass" : {
+      "@id" : "https://w3id.org/def/DIBO#hasMolecularMass",
+      "@type" : "@id"
+    },
+    "Agonism" : {
+      "@id" : "https://w3id.org/def/DIBO/Agonism"
+    },
+    "AgentAffectingNervousSystem" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffectingNervousSystem"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/def/DIBO#hasValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasDrug" : {
+      "@id" : "https://w3id.org/def/DIBO#hasDrug",
+      "@type" : "@id"
+    },
+    "Organ" : {
+      "@id" : "https://w3id.org/def/DIBO/Organ"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasDrugBankId" : {
+      "@id" : "https://w3id.org/def/DIBO#hasDrugBankId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "InmunoTherapeuticAgent" : {
+      "@id" : "https://w3id.org/def/DIBO/InmunoTherapeuticAgent"
+    },
+    "affectOrgan" : {
+      "@id" : "https://w3id.org/def/DIBO#affectOrgan",
+      "@type" : "@id"
+    },
+    "SBO_0000634" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000634"
+    },
+    "AntiInfectiveAgent" : {
+      "@id" : "https://w3id.org/def/DIBO/AntiInfectiveAgent"
+    },
+    "AgentAffectingCardiovascularSystem" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffectingCardiovascularSystem"
+    },
+    "PharmacologicSubstance" : {
+      "@id" : "https://w3id.org/def/DIBO/PharmacologicSubstance"
+    },
+    "Drug" : {
+      "@id" : "https://w3id.org/def/DIBO/Drug"
+    },
+    "SBO_0000014" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000014"
+    },
+    "AgentAffectingMusculoskeletalSystem" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffectingMusculoskeletalSystem"
+    },
+    "hasTarget" : {
+      "@id" : "https://w3id.org/def/DIBO#hasTarget",
+      "@type" : "@id"
+    },
+    "hasMolecularFormula" : {
+      "@id" : "https://w3id.org/def/DIBO#hasMolecularFormula",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SBO_0000002" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000002"
+    },
+    "actingAs" : {
+      "@id" : "https://w3id.org/def/DIBO#actingAs",
+      "@type" : "@id"
+    },
+    "SIO_010003" : {
+      "@id" : "http://semanticscience.org/resource/SIO_010003"
+    },
+    "SBO_0000251" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000251"
+    },
+    "ReceptorModifier" : {
+      "@id" : "https://w3id.org/def/DIBO/ReceptorModifier"
+    },
+    "D020228" : {
+      "@id" : "https://bioportal.bioontology.org/ontologies/MESH/D020228"
+    },
+    "Adjuvant" : {
+      "@id" : "https://w3id.org/def/DIBO/Adjuvant"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "EnzymeModifier" : {
+      "@id" : "https://w3id.org/def/DIBO/EnzymeModifier"
+    },
+    "Organs" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffecting/Organs"
+    },
+    "NucleicAcidModifier" : {
+      "@id" : "https://w3id.org/def/DIBO/NucleicAcidModifier"
+    },
+    "hasEffect" : {
+      "@id" : "https://w3id.org/def/DIBO#hasEffect",
+      "@type" : "@id"
+    },
+    "hasHalfLife" : {
+      "@id" : "https://w3id.org/def/DIBO#hasHalfLife",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasScientificName" : {
+      "@id" : "https://w3id.org/def/DIBO#hasScientificName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "functionallyGroupedIn" : {
+      "@id" : "https://w3id.org/def/DIBO#functionallyGroupedIn",
+      "@type" : "@id"
+    },
+    "hasChebiId" : {
+      "@id" : "https://w3id.org/def/DIBO#hasChebiId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PharmacologicAction" : {
+      "@id" : "https://w3id.org/def/DIBO/PharmacologicAction"
+    },
+    "metabolizedBy" : {
+      "@id" : "https://w3id.org/def/DIBO#metabolizedBy",
+      "@type" : "@id"
+    },
+    "SBO_0000635" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000635"
+    },
+    "AgentAffectingRespiratorySystem" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffectingRespiratorySystem"
+    },
+    "Metabolism" : {
+      "@id" : "https://w3id.org/def/DIBO/AgentAffecting/Metabolism"
+    },
+    "Antagonism" : {
+      "@id" : "https://w3id.org/def/DIBO/Antagonism"
+    },
+    "Neutral" : {
+      "@id" : "https://w3id.org/def/DIBO/Neutral"
+    },
+    "metabolizedIn" : {
+      "@id" : "https://w3id.org/def/DIBO#metabolizedIn",
+      "@type" : "@id"
+    },
+    "Interaction" : {
+      "@id" : "https://w3id.org/def/DIBO/Interaction"
+    },
+    "Target" : {
+      "@id" : "https://www.w3.org/def/DIBO/Target"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AntineoplasicAgent" : {
+      "@id" : "https://w3id.org/def/DIBO/AntineoplasicAgent"
+    },
+    "License" : {
+      "@id" : "http://creativecommons.org/ns#License"
+    },
+    "SBO_0000250" : {
+      "@id" : "http://biomodels.net/SBO/SBO_0000250"
+    },
+    "D064419" : {
+      "@id" : "https://bioportal.bioontology.org/ontologies/MESH/D064419"
+    },
+    "Enzyme" : {
+      "@id" : "https://w3id.org/def/DIBO/Enzyme"
+    },
+    "Protein" : {
+      "@id" : "https://w3id.org/def/DIBO/Protein"
+    }
+  }
+}
